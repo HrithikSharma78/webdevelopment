@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sunrise Care Clinic - Appointment Booking</title>
+</head>
+<body>
+
+    <!-- Clinic Branding -->
+    <h1>Sunrise Care Clinic</h1>
+    <h3>"Compassion, Care, and Commitment"</h3>
+    <img src="clinic.webp" alt="Clinic Banner"><br><br>
+
+    <!-- Intro Paragraphs -->
+    <p>
+        Welcome to Sunrise Care Clinic’s online appointment booking system. <br>
+        We understand that health is the most valuable asset, and our goal is to make healthcare accessible and convenient. <br>
+        This form allows you to request an appointment with our doctors without the hassle of waiting in long queues. <br>
+        Please fill in the details carefully so that we can serve you better.
+    </p>
+
+    <p>
+        Our clinic offers a wide range of medical services, and each doctor specializes in different areas of care. <br>
+        By completing this form, you help us schedule your visit efficiently and ensure that you meet the right specialist. <br>
+        Kindly provide accurate contact information and select your preferred appointment date and time. <br>
+        Your cooperation helps us maintain smooth operations and timely medical assistance.
+    </p>
+
+    <!-- Appointment Booking Form -->
+    <form action="#" method="post">
+
+        <h2>Patient Information</h2>
+        <label for="pname">Full Name:</label>
+        <input type="text" id="pname" name="pname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" min="1900-01-01" max="2026-12-31" required><br><br>
+
+        <label for="patientid">Patient ID (Optional):</label>
+        <input type="text" id="patientid" name="patientid" maxlength="10"><br><br>
+
+        <h2>Appointment Preferences</h2>
+        <label for="adate">Appointment Date:</label>
+        <input type="date" id="adate" name="adate" min="2026-09-08" required><br><br>
+
+        <label for="atime">Appointment Time:</label>
+        <input type="time" id="atime" name="atime" required><br><br>
+
+        <h2>Doctor Selection</h2>
+        <label for="doctor">Choose Doctor:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="">--Select--</option>
+            <option value="Dr. A Sharma - Cardiology">Dr. A Sharma - Cardiology</option>
+            <option value="Dr. B Mehta - Pediatrics">Dr. B Mehta - Pediatrics</option>
+            <option value="Dr. C Rao - Orthopedics">Dr. C Rao - Orthopedics</option>
+            <option value="Dr. D Kapoor - Dermatology">Dr. D Kapoor - Dermatology</option>
+            <option value="Dr. E Singh - General Medicine">Dr. E Singh - General Medicine</option>
+        </select><br><br>
+
+        <h2>Visit Details</h2>
+        <label>Visit Type:</label>
+        <input type="radio" id="new" name="visit" value="New Patient" required> New Patient
+        <input type="radio" id="follow" name="visit" value="Follow-up"> Follow-up
+        <input type="radio" id="consult" name="visit" value="Consultation"> Consultation
+        <input type="radio" id="emergency" name="visit" value="Emergency"> Emergency<br><br>
+
+        <label>Preferred Communication Method:</label>
+        <input type="checkbox" id="phone" name="comm" value="Phone"> Phone
+        <input type="checkbox" id="emailcomm" name="comm" value="Email"> Email
+        <input type="checkbox" id="sms" name="comm" value="SMS"> SMS<br><br>
+
+        <label for="reason">Reason for Visit / Additional Information:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="40"></textarea><br><br>
+
+        <h2>Consent</h2>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the appointment terms and conditions of Sunrise Care Clinic.</label><br><br>
+
+        <input type="submit" value="Book Appointment">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <!-- Clinic Timings Table -->
+    <h2>Clinic Timings</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Day</th>
+            <th>Opening Hours</th>
+            <th>Closing Hours</th>
+        </tr>
+        <tr>
+            <td>Monday - Friday</td>
+            <td>09:00 AM</td>
+            <td>07:00 PM</td>
+        </tr>
+        <tr>
+            <td>Saturday</td>
+            <td>10:00 AM</td>
+            <td>05:00 PM</td>
+        </tr>
+        <tr>
+            <td>Sunday</td>
+            <td colspan="2">Closed</td>
+        </tr>
+    </table><br>
+
+    <!-- Emergency Contact -->
+    <p>
+        For urgent medical assistance, please call our emergency helpline: <a href="tel:+911234567890">+91 1234567890</a> <br>
+        You can also email us at: <a href="mailto:appointments@sunrisecareclinic.com">appointments@sunrisecareclinic.com</a> <br>
+        Our team is dedicated to ensuring timely care and support for all patients. <br>
+        Thank you for trusting Sunrise Care Clinic with your health needs.
+    </p>
+
+</body>
+</html>

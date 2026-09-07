@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Admission & Student Registration Portal</title>
+</head>
+<body>
+
+    <!-- 1. Landing Section -->
+    <header>
+        <h1>GLA university - Admission Portal</h1>
+        <p>Welcome to our official admission portal. Here you can explore programs, fees, facilities, and apply online.</p>
+        <img src="gla-university-greater-noida-360944.webp" alt="Campus Image">
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#programs">Programs</a> |
+            <a href="#fees">Fees</a> |
+            <a href="#admissions">Admissions</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- 2. Sections -->
+    <section id="about">
+        <h2>About University</h2>
+        <p>GLA University is a center of excellence.<br>
+            We focus on <strong>quality education</strong> and innovation.<br>
+            <em>Our mission</em> is to empower students globally.<br>
+            <mark>Founded in 1990, we continue to grow.</mark>.</p>
+    </section>
+
+    <section id="director">
+        <h2>Director’s Message</h2>
+        <blockquote>
+            "Knowledge is power. Information is liberating.  Education is the premise of progress, a sentiment echoed by the Director of Indira Gandhi Computer Academy.  This message underscores the transformative force of education in shaping lives and creating positive societal impact. "
+        </blockquote>
+    </section>
+
+    <section id="programs">
+        <h2>Academic Programs</h2>
+        <ul>
+            <li>Btech AIML - Program Feature 1</li>
+            <li>Btech CSE - Program Feature 2</li>
+            <li>Btech ECE - Program Feature 3</li>
+        </ul>
+    </section>
+
+    <section id="facilities">
+        <h2>Campus Facilities</h2>
+        <p>The campus of <mark>GLA University Greater Noida </mark>is designed to provide students with <em>world‑class infrastructure and a supportive learning environment. Modern classrooms equipped with smart technology ensure interactive teaching, while advanced laboratories allow hands‑on experimentation and research.</em></p>
+        <img src="college-students-paying-attention-on-a-class-at-lecture-hall.webp" alt="Facility Image" width="489">
+    </section>
+
+    <section id="studentlife">
+        <h2>Student Life</h2>
+        <p>Student life at GLA University Greater Noida is dynamic, diverse, and full of opportunities for growth beyond academics. Cultural festivals, technical competitions, and sports tournaments keep the campus buzzing with energy throughout the year. Numerous student clubs and societies provide platforms for leadership, creativity, and teamwork, helping individuals discover their passions</p>
+    </section>
+
+    <section id="admissions">
+        <h2>Admissions Process</h2>
+        <ol>
+            <li>Fill Application Form</li>
+            <li>Submit Required Documents</li>
+            <li>Appear for Counselling</li>
+            <li>Confirm Admission</li>
+        </ol>
+    </section>
+
+    <!-- 4. Description List -->
+    <section id="eligibility">
+        <h2>Admission Information</h2>
+        <dl>
+            <dt>Eligibility</dt>
+            <dd>eligibility criteria- 65% or more in PCM</dd>
+            <dt>Merit List</dt>
+            <dd>JEE percentile 70% - merit list info</dd>
+            <dt>Counselling</dt>
+            <dd>via UPTEK councelling - counselling details</dd>
+            <dt>Scholarship</dt>
+            <dd>Merit Based - scholarship info</dd>
+            <dt>Admission Number</dt>
+            <dd>GLA-2026EWEDBB - admission number format</dd>
+        </dl>
+    </section>
+
+    <!-- 5. Fee Table -->
+    <section id="fees">
+        <h2>Fee Structure</h2>
+        <table border="1">
+            <caption>Program Fee Details</caption>
+            <tr>
+                <th>Program</th>
+                <th>Duration</th>
+                <th>Eligibility</th>
+                <th>Tuition Fee</th>
+                <th>Other Fee</th>
+                <th>Total Fee</th>
+            </tr>
+            <tr>
+                <td rowspan="2">B.Tech</td>
+                <td>4 Years</td>
+                <td>65% or more</td>
+                <td>11,88,000</td>
+                <td>7,000</td>
+                <td>11,95,000</td>
+            </tr>
+            <tr>
+                <td colspan="5">Common for all Branches</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- 7. Important Dates -->
+    <section id="dates">
+        <h2>Important Dates</h2>
+        <p>Application Deadline: <mark>11/09/2026</mark></p>
+        <p>Counselling Date: <b>10/08/2026</b></p>
+    </section>
+
+    <!-- 8. Admission Form -->
+    <section id="form">
+        <h2>Admission Form</h2>
+        <form>
+            <fieldset>
+                <legend>Personal Details</legend>
+                <label>Full Name: <input type="text" name="fullname" required minlength="3"></label><br>
+                <label>Date of Birth: <input type="date" name="dob" required></label><br>
+                <label>Gender:
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label>Email: <input type="email" name="email" required></label><br>
+                <label>Phone: <input type="tel" name="phone" pattern="[0-9]{10}" required></label><br>
+                <label>Address: <textarea name="address" required></textarea></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Information</legend>
+                <label>Marks (%): <input type="number" name="marks" min="0" max="100" step="0.1" required></label><br>
+                <label>Program:
+                    <select name="program" required>
+                        <option value="">--Select--</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="mba">MBA</option>
+                        <option value="msc">M.Sc</option>
+                    </select>
+                </label><br>
+                <label>Category:
+                    <input type="checkbox" name="category" value="general"> General
+                    <input type="checkbox" name="category" value="obc"> OBC
+                    <input type="checkbox" name="category" value="sc"> SC
+                </label><br>
+                <label>Upload Documents: <input type="file" name="documents"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Declaration</legend>
+                <label>
+                    <input type="checkbox" name="declare" required> I hereby declare that the information provided is true.
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit Application">
+        </form>
+    </section>
+
+    <!-- 12. Contact Links -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:add-yourself-email@example.com">add-yourself-email@example.com</a></p>
+        <p>Phone: <a href="tel:add-yourself-phone">add-yourself-phone</a></p>
+        <a href="https://add-yourself-link.com">
+            <img src="12-June-GLA-Banner.webp" alt="Clickable Image">
+        </a>
+    </section>
+
+</body>
+</html>
+
+

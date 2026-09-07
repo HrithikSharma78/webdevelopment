@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BrightFuture Tech Solutions - Employee Leave Request</title>
+</head>
+<body>
+
+    <!-- Company Branding -->
+    <h1>BrightFuture Tech Solutions</h1>
+    <h3>"Innovation with Responsibility"</h3>
+    <img src="online_education.webp" alt="Company Banner"><br><br>
+
+    <!-- Intro Paragraphs -->
+    <p>
+        Welcome to the official Employee Leave Request portal of BrightFuture Tech Solutions. <br>
+        This page has been created to simplify the process of applying for leave by replacing manual paperwork with a structured online form. <br>
+        Employees can now submit their leave requests quickly and efficiently, ensuring transparency and proper record-keeping. <br>
+        Please provide accurate details so that your request can be processed without delays.
+    </p>
+
+    <p>
+        The form collects essential information such as your employee ID, department, leave type, and duration. <br>
+        You will also be asked to specify whether you can be reached during your leave and provide an alternate contact number. <br>
+        Supporting documents can be uploaded if required, and a declaration must be accepted before submission. <br>
+        Kindly ensure that all mandatory fields are completed to avoid rejection of your request.
+    </p>
+
+    <!-- Leave Request Form -->
+    <form action="#" method="post">
+
+        <h2>Employee Details</h2>
+        <label for="ename">Employee Name:</label>
+        <input type="text" id="ename" name="ename" required><br><br>
+
+        <label for="eid">Employee ID:</label>
+        <input type="text" id="eid" name="eid" pattern="[A-Z0-9]{5,10}" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dept">Department:</label>
+        <select id="dept" name="dept" required>
+            <option value="">--Select--</option>
+            <option value="HR">Human Resources</option>
+            <option value="Finance">Finance</option>
+            <option value="IT">Information Technology</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Sales">Sales</option>
+            <option value="Operations">Operations</option>
+        </select><br><br>
+
+        <h2>Leave Details</h2>
+        <label>Leave Type:</label>
+        <input type="radio" id="casual" name="leave" value="Casual Leave" required> Casual Leave
+        <input type="radio" id="sick" name="leave" value="Sick Leave"> Sick Leave
+        <input type="radio" id="earned" name="leave" value="Earned Leave"> Earned Leave
+        <input type="radio" id="wfh" name="leave" value="Work From Home"> Work From Home
+        <input type="radio" id="other" name="leave" value="Other"> Other<br><br>
+
+        <label for="start">Start Date:</label>
+        <input type="date" id="start" name="start" min="2026-09-08" required><br><br>
+
+        <label for="end">End Date:</label>
+        <input type="date" id="end" name="end" min="2026-09-08" required><br><br>
+
+        <label for="days">Number of Leave Days:</label>
+        <input type="number" id="days" name="days" min="1" max="30" step="1" required><br><br>
+
+        <label>Reachable During Leave:</label>
+        <input type="radio" id="yes" name="reachable" value="Yes" required> Yes
+        <input type="radio" id="no" name="reachable" value="No"> No<br><br>
+
+        <label for="reason">Reason for Leave:</label><br>
+        <textarea id="reason" name="reason" rows="4" cols="40" required></textarea><br><br>
+
+        <label for="altcontact">Alternate Contact Number:</label>
+        <input type="tel" id="altcontact" name="altcontact" pattern="[0-9]{10}" required><br><br>
+
+        <h2>Supporting Document</h2>
+        <label for="document">Upload Document (Optional):</label>
+        <input type="file" id="document" name="document"><br><br>
+
+        <h2>Declaration</h2>
+        <input type="checkbox" id="declare" name="declare" required>
+        <label for="declare">I hereby declare that the information provided is true and I consent to the leave approval process at BrightFuture Tech Solutions.</label><br><br>
+
+        <input type="submit" value="Submit Request">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <!-- Leave Categories Table -->
+    <h2>Example Leave Categories</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Leave Category</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Casual Leave</td>
+            <td>Short-term leave for personal reasons or urgent matters.</td>
+        </tr>
+        <tr>
+            <td>Sick Leave</td>
+            <td>Leave taken due to illness or medical treatment.</td>
+        </tr>
+        <tr>
+            <td>Earned Leave</td>
+            <td>Leave accumulated based on service tenure.</td>
+        </tr>
+        <tr>
+            <td>Work From Home</td>
+            <td>Approved remote working arrangement during leave period.</td>
+        </tr>
+        <tr>
+            <td>Other</td>
+            <td>Any special leave not covered under standard categories.</td>
+        </tr>
+    </table><br>
+
+    <!-- Contact Info -->
+    <p>
+        For queries regarding leave policies, please contact HR at: <a href="mailto:hr@brightfuturetech.com">hr@brightfuturetech.com</a> <br>
+        You can also reach us by phone: <a href="tel:+911234567890">+91 1234567890</a> <br>
+        Our HR team is dedicated to supporting employees and ensuring fair leave management. <br>
+        Thank you for using the BrightFuture Tech Solutions Leave Request Portal.
+    </p>
+
+</body>
+</html>

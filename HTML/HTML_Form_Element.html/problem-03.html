@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TechNova Academy - Course Enrollment</title>
+</head>
+<body>
+
+    <!-- Branding -->
+    <h1>TechNova Academy</h1>
+    <h3>"Empowering Learners for Tomorrow"</h3>
+    <img src="online_education.webp" alt="Academy Banner"><br><br>
+
+    <!-- Intro Paragraphs -->
+    <p>
+        Welcome to TechNova Academy’s online course enrollment portal. <br>
+        We are committed to providing high-quality technical education that prepares students for real-world challenges. <br>
+        This registration form is designed to collect your details and match you with the right course and batch. <br>
+        Please fill in the information carefully to ensure a smooth enrollment process.
+    </p>
+
+    <p>
+        Our academy offers a variety of technical programs ranging from programming to advanced data science. <br>
+        You can choose your preferred learning mode, highlight your areas of interest, and share your academic background. <br>
+        This helps us personalize your learning journey and provide the right resources. <br>
+        Kindly ensure that all mandatory fields are completed before submission.
+    </p>
+
+    <!-- Enrollment Form -->
+    <form action="#" method="post">
+
+        <h2>Account Information</h2>
+        <label for="sname">Full Name:</label>
+        <input type="text" id="sname" name="sname" placeholder="Enter your full name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" minlength="6" maxlength="12" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" min="1990-01-01" max="2010-12-31" required><br><br>
+
+        <h2>Course Selection</h2>
+        <label for="course">Choose Course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Select--</option>
+            <option value="Java Programming">Java Programming</option>
+            <option value="Python Programming">Python Programming</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Data Structures">Data Structures</option>
+            <option value="Database Management">Database Management</option>
+            <option value="Data Science">Data Science</option>
+        </select><br><br>
+
+        <label for="batch">Select Batch/Session:</label>
+        <select id="batch" name="batch" required>
+            <option value="">--Select--</option>
+            <option value="Morning Batch">Morning Batch</option>
+            <option value="Afternoon Batch">Afternoon Batch</option>
+            <option value="Evening Batch">Evening Batch</option>
+            <option value="Weekend Batch">Weekend Batch</option>
+        </select><br><br>
+
+        <h2>Learning Preferences</h2>
+        <label>Learning Mode:</label>
+        <input type="radio" id="online" name="mode" value="Online" required> Online
+        <input type="radio" id="offline" name="mode" value="Offline"> Offline
+        <input type="radio" id="hybrid" name="mode" value="Hybrid"> Hybrid<br><br>
+
+        <label>Areas of Interest:</label><br>
+        <input type="checkbox" id="java" name="interest" value="Java"> Java<br>
+        <input type="checkbox" id="python" name="interest" value="Python"> Python<br>
+        <input type="checkbox" id="web" name="interest" value="Web Development"> Web Development<br>
+        <input type="checkbox" id="ds" name="interest" value="Data Structures"> Data Structures<br>
+        <input type="checkbox" id="db" name="interest" value="Database"> Database<br><br>
+
+        <h2>Academic Background</h2>
+        <label for="education">Education Level:</label>
+        <input type="text" id="education" name="education" required><br><br>
+
+        <label for="college">College / Institution:</label>
+        <input type="text" id="college" name="college" required><br><br>
+
+        <label for="semester">Current Semester / Year:</label>
+        <input type="text" id="semester" name="semester" required><br><br>
+
+        <label for="experience">Programming Experience (Years):</label>
+        <input type="number" id="experience" name="experience" min="0" max="20" step="1" required><br><br>
+
+        <label for="portfolio">GitHub / Portfolio URL:</label>
+        <input type="url" id="portfolio" name="portfolio" placeholder="https://github.com/username"><br><br>
+
+        <label for="goals">Learning Goals:</label><br>
+        <textarea id="goals" name="goals" rows="4" cols="40" placeholder="Describe your goals..."></textarea><br><br>
+
+        <h2>Confirmation</h2>
+        <input type="checkbox" id="confirm" name="confirm" required>
+        <label for="confirm">I confirm that the information provided is accurate and I agree to enroll in TechNova Academy.</label><br><br>
+
+        <input type="submit" value="Enroll Now">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <!-- Extra Info -->
+    <p>
+        For more details about our courses, visit: <a href="#">www.technovaacademy.edu/courses</a> <br>
+        You can also reach us at: <a href="mailto:enroll@technovaacademy.edu">enroll@technovaacademy.edu</a> <br>
+        Our team is here to guide you through every step of your learning journey. <br>
+        Thank you for choosing TechNova Academy to build your future.
+    </p>
+
+</body>
+</html>

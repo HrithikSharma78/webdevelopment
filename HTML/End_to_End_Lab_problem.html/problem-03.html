@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EduLearn Portal</title>
+</head>
+<body>
+
+  <!-- Platform Introduction -->
+  <header>
+    <h1><mark>Online Education Platform</mark></h1>
+    <p>Welcome to <strong>EduLearn</strong>, your gateway to modern learning. Explore courses, compare options, and enroll with ease.</p>
+    <img src="online_education.webp" alt="Learning Banner">
+    <nav>
+      <a href="#catalog">Course Catalog</a> |
+      <a href="#comparison">Comparison Table</a> |
+      <a href="#featured">Featured Course</a> |
+      <a href="#enroll">Enrollment Form</a>
+    </nav>
+  </header>
+
+  <!-- Course Catalog -->
+  <section id="catalog">
+    <h2>Course Catalog</h2>
+    <ul>
+      <li>Web Development Basics</li>
+      <li>Data Science Essentials</li>
+      <li>Artificial Intelligence Foundations</li>
+      <li>Cloud Computing with Azure</li>
+      <li>Cybersecurity Fundamentals</li>
+      <li>Mobile App Development</li>
+    </ul>
+
+    <h3>Course Features</h3>
+    <ul>
+      <li>Interactive sessions</li>
+      <li>Hands-on projects</li>
+      <li>Expert mentors</li>
+      <li>Flexible schedules</li>
+    </ul>
+
+    <h3>Enrollment Journey</h3>
+    <ol>
+      <li>Explore courses</li>
+      <li>Compare options</li>
+      <li>Check prerequisites</li>
+      <li>Fill enrollment form</li>
+      <li>Submit and confirm</li>
+    </ol>
+
+    <h3>Course Levels</h3>
+    <dl>
+      <dt>Beginner</dt><dd>For newcomers starting fresh.</dd>
+      <dt>Intermediate</dt><dd>For learners with some background.</dd>
+      <dt>Advanced</dt><dd>For experienced professionals.</dd>
+      <dt>Prerequisite</dt><dd>Prior knowledge required.</dd>
+      <dt>Certification</dt><dd>Earn recognized credentials.</dd>
+      <dt>Live Session</dt><dd>Real-time mentor interaction.</dd>
+    </dl>
+  </section>
+
+  <!-- Comparison Table -->
+  <section id="comparison">
+    <h2>Course Comparison</h2>
+    <table border="1">
+      <caption>Course Comparison Overview</caption>
+      <tr>
+        <th>Course</th><th>Duration</th><th>Level</th><th>Mode</th><th>Mentor</th><th>Fee</th><th>Certificate</th>
+      </tr>
+      <tr><td>Web Development</td><td>3 Months</td><td>Beginner</td><td>Online</td><td>Mr. A</td><td>$200</td><td>Yes</td></tr>
+      <tr><td>Data Science</td><td>4 Months</td><td>Intermediate</td><td>Hybrid</td><td>Ms. B</td><td>$300</td><td>Yes</td></tr>
+      <tr><td>AI Foundations</td><td>5 Months</td><td>Advanced</td><td>Online</td><td>Dr. C</td><td>$400</td><td>Yes</td></tr>
+      <tr><td>Cloud Computing</td><td>2 Months</td><td>Beginner</td><td>Offline</td><td>Mr. D</td><td>$250</td><td>No</td></tr>
+      <tr><td>Cybersecurity</td><td>3 Months</td><td>Intermediate</td><td>Online</td><td>Ms. E</td><td>$350</td><td>Yes</td></tr>
+      <tr><td>Mobile Apps</td><td>4 Months</td><td>Advanced</td><td>Hybrid</td><td>Mr. F</td><td>$450</td><td>Yes</td></tr>
+    </table>
+  </section>
+
+  <!-- Featured Course -->
+  <section id="featured">
+    <h2>Featured Course: Web Development Basics</h2>
+    <p><em>Web Development Basics</em> is designed to give you a strong foundation in HTML, CSS, and JavaScript. You will learn how to build interactive websites and understand the principles of responsive design.</p>
+    <p>Our mentors guide you through projects that simulate real-world scenarios. <mark>By the end, you’ll be confident in creating functional web pages.</mark></p>
+    <blockquote>"Learning to code is not just about syntax, it's about problem-solving and creativity."</blockquote>
+    <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;Hello World&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;Welcome to Web Development&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+    <a href="https://example.com/webdev">
+      <img src="online course.webp" alt="Web Development Course">
+    </a>
+  </section>
+
+  <!-- Enrollment Form -->
+  <section id="enroll">
+    <h2>Enrollment Form</h2>
+    <form>
+      <label>Name: <input type="text" name="name" required minlength="3" maxlength="50" placeholder="Enter full name"></label><br>
+      <label>Email: <input type="email" name="email" required autocomplete="email"></label><br>
+      <label>Password: <input type="password" name="password" required minlength="6"></label><br>
+      <label>Mobile: <input type="tel" name="mobile" pattern="[0-9]{10}" required placeholder="10-digit number"></label><br>
+      <label>Date of Birth: <input type="date" name="dob" required></label><br>
+
+      <label>Course:
+        <select name="course" required>
+          <option>Web Development</option>
+          <option>Data Science</option>
+          <option>AI Foundations</option>
+          <option>Cloud Computing</option>
+          <option>Cybersecurity</option>
+          <option>Mobile Apps</option>
+        </select>
+      </label><br>
+
+      <label>Batch:
+        <input type="radio" name="batch" value="Morning">Morning
+        <input type="radio" name="batch" value="Evening">Evening
+      </label><br>
+
+      <label>Learning Mode:
+        <input type="checkbox" name="mode" value="Online">Online
+        <input type="checkbox" name="mode" value="Offline">Offline
+        <input type="checkbox" name="mode" value="Hybrid">Hybrid
+      </label><br>
+
+      <label>Technical Interests:
+        <input type="checkbox" name="interest" value="AI">AI
+        <input type="checkbox" name="interest" value="Web">Web
+        <input type="checkbox" name="interest" value="Cloud">Cloud
+      </label><br>
+
+      <label>Learning Goals:
+        <textarea name="goals" rows="4" cols="40" placeholder="Describe your goals"></textarea>
+      </label><br>
+
+      <label>GitHub/Portfolio URL:
+        <input type="url" name="portfolio" placeholder="https://github.com/username">
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="terms" required> I confirm accuracy and agree to terms
+      </label><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </section>
+
+  <!-- Links -->
+  <footer>
+    <p>Visit our <a href="https://example.com">official site</a> or return to <a href="#catalog">Course Catalog</a>.</p>
+  </footer>
+
+</body>
+</html>

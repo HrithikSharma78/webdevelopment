@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ShopEase Online Store - Checkout</title>
+</head>
+<body>
+
+    <!-- Store Branding -->
+    <h1>ShopEase Online Store</h1>
+    <h3>"Your Comfort, Our Priority"</h3>
+    <img src="87cd94a541f0b833348199f6a8c155ee.webp" alt="Store Banner"><br><br>
+
+    <!-- Intro Paragraphs -->
+    <p>
+        Welcome to the ShopEase checkout page. <br>
+        You have selected your products and are now just a few steps away from completing your order. <br>
+        Please provide your account, delivery, and payment details carefully to ensure smooth processing. <br>
+        This form is designed to give you a simple, secure, and transparent shopping experience.
+    </p>
+
+    <p>
+        Our checkout process includes product summary, customer information, delivery preferences, and payment options. <br>
+        You can also apply a coupon code if available and leave delivery instructions for our team. <br>
+        Kindly review all details before placing your order to avoid delays or errors. <br>
+        Thank you for choosing ShopEase for your online shopping needs.
+    </p>
+
+    <!-- Product Table -->
+    <h2>Order Summary</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Wireless Headphones</td>
+            <td>1</td>
+            <td>₹2000</td>
+            <td>₹2000</td>
+        </tr>
+        <tr>
+            <td>Smartphone Case</td>
+            <td>2</td>
+            <td>₹500</td>
+            <td>₹1000</td>
+        </tr>
+        <tr>
+            <td>USB-C Charger</td>
+            <td>1</td>
+            <td>₹800</td>
+            <td>₹800</td>
+        </tr>
+        <tr>
+            <td colspan="3"><b>Grand Total</b></td>
+            <td><b>₹3800</b></td>
+        </tr>
+    </table><br>
+
+    <!-- Checkout Form -->
+    <form action="#" method="post">
+
+        <h2>Customer Information</h2>
+        <label for="cname">Full Name:</label>
+        <input type="text" id="cname" name="cname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+        <h2>Delivery Address</h2>
+        <label for="house">House / Street:</label>
+        <input type="text" id="house" name="house" required><br><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br><br>
+
+        <label for="state">State:</label>
+        <select id="state" name="state" required>
+            <option value="">--Select--</option>
+            <option value="UP">Uttar Pradesh</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="West Bengal">West Bengal</option>
+        </select><br><br>
+
+        <label for="postal">Postal Code:</label>
+        <input type="text" id="postal" name="postal" pattern="[0-9]{6}" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+        </select><br><br>
+
+        <h2>Delivery Options</h2>
+        <input type="radio" id="standard" name="delivery" value="Standard" required> Standard
+        <input type="radio" id="express" name="delivery" value="Express"> Express
+        <input type="radio" id="same" name="delivery" value="Same Day"> Same Day<br><br>
+
+        <h2>Payment Options</h2>
+        <input type="radio" id="card" name="payment" value="Card" required> Card
+        <input type="radio" id="cod" name="payment" value="Cash on Delivery"> Cash on Delivery
+        <input type="radio" id="upi" name="payment" value="UPI"> UPI / Online Payment<br><br>
+
+        <!-- Card Payment Fields -->
+        <h3>Card Payment Details (if applicable)</h3>
+        <label for="cardname">Card Holder Name:</label>
+        <input type="text" id="cardname" name="cardname"><br><br>
+
+        <label for="cardnum">Card Number:</label>
+        <input type="text" id="cardnum" name="cardnum" pattern="[0-9]{16}"><br><br>
+
+        <label for="expiry">Expiry Date:</label>
+        <input type="month" id="expiry" name="expiry"><br><br>
+
+        <label for="cvv">Security Code (CVV):</label>
+        <input type="password" id="cvv" name="cvv" pattern="[0-9]{3}"><br><br>
+
+        <h2>Additional Options</h2>
+        <label for="coupon">Coupon / Promo Code:</label>
+        <input type="text" id="coupon" name="coupon" maxlength="12"><br><br>
+
+        <input type="checkbox" id="billing" name="billing">
+        <label for="billing">Billing address same as delivery</label><br><br>
+
+        <label for="instructions">Delivery Instructions:</label><br>
+        <textarea id="instructions" name="instructions" rows="4" cols="40"></textarea><br><br>
+
+        <h2>Confirmation</h2>
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms & Conditions</label><br><br>
+
+        <input type="checkbox" id="confirm" name="confirm" required>
+        <label for="confirm">I confirm my order details are correct</label><br><br>
+
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Reset"><br><br>
+
+        <a href="#">Continue Shopping</a>
+
+    </form>
+
+    <!-- Outro -->
+    <p>
+        Thank you for shopping with ShopEase. <br>
+        Our team is dedicated to delivering your products safely and on time. <br>
+        For queries, contact us at: <a href="mailto:support@shopease.com">support@shopease.com</a> <br>
+        We look forward to serving you again.
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Private Clinic Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1, h2 { color: darkblue; }
+    table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+    table, th, td { border: 1px solid #333; }
+    th, td { padding: 8px; text-align: center; }
+    caption { font-weight: bold; margin-bottom: 5px; }
+    form { border: 1px solid #333; padding: 15px; margin-top: 20px; }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea { width: 100%; padding: 6px; margin-top: 4px; }
+    .consent { margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Clinic Introduction -->
+  <h1>H&M Health Clinic</h1>
+  <p>Welcome to H&M Health Clinic, your trusted partner in healthcare. We provide compassionate care with modern facilities and experienced doctors.</p>
+  <img src="clinic.webp" alt="Clinic Image" width="300">
+  <p>
+    <a href="about.html">About Us</a> | 
+    <a href="services.html">Services</a> | 
+    <a href="contact.html">Contact</a>
+  </p>
+
+  <!-- Doctors & Specialties -->
+  <h2>Doctors & Specialties</h2>
+  <p>Our clinic offers a wide range of specialties to meet patient needs:</p>
+  <ul>
+    <li>General Medicine</li>
+    <li>Pediatrics</li>
+    <li>Cardiology</li>
+    <li>Dermatology</li>
+    <li>Orthopedics</li>
+  </ul>
+
+  <!-- Doctor Table -->
+  <table>
+    <caption>Doctor Availability & Consultation Details</caption>
+    <tr>
+      <th>Doctor Name</th>
+      <th>Specialty</th>
+      <th>Available Days</th>
+      <th>Consultation Type</th>
+      <th>Consultation Fee</th>
+    </tr>
+    <tr>
+      <td>Dr. A Sharma</td>
+      <td>General Medicine</td>
+      <td>Mon–Fri</td>
+      <td>In-person</td>
+      <td>₹500</td>
+    </tr>
+    <tr>
+      <td>Dr. B Verma</td>
+      <td>Pediatrics</td>
+      <td>Tue–Sat</td>
+      <td>Teleconsultation</td>
+      <td>₹400</td>
+    </tr>
+    <tr>
+      <td>Dr. C Gupta</td>
+      <td>Cardiology</td>
+      <td>Mon, Wed, Fri</td>
+      <td>Emergency</td>
+      <td>₹1000</td>
+    </tr>
+  </table>
+
+  <!-- Description List -->
+  <h2>Consultation Types</h2>
+  <dl>
+    <dt>New Patient</dt><dd>First-time visit for initial evaluation.</dd>
+    <dt>Follow-up</dt><dd>Subsequent visit for ongoing care.</dd>
+    <dt>Consultation</dt><dd>General medical advice and treatment.</dd>
+    <dt>Emergency</dt><dd>Immediate care for urgent conditions.</dd>
+    <dt>Teleconsultation</dt><dd>Remote consultation via phone or video.</dd>
+  </dl>
+
+  <!-- Appointment Process -->
+  <h2>Appointment Process</h2>
+  <ol>
+    <li>Fill out the intake form.</li>
+    <li>Submit your request.</li>
+    <li>Clinic staff reviews and confirms.</li>
+    <li>Receive appointment confirmation.</li>
+  </ol>
+
+  <!-- Documents to Keep Ready -->
+  <h2>Documents to Keep Ready</h2>
+  <ul>
+    <li>Government-issued ID</li>
+    <li>Previous medical records</li>
+    <li>Insurance card</li>
+    <li>List of current medications</li>
+  </ul>
+
+  <!-- Patient Intake Form -->
+  <h2>Patient Intake Form</h2>
+  <form>
+    <label>Patient Name: <input type="text" name="name" required></label>
+    <label>Date of Birth: <input type="date" name="dob" required></label>
+    <label>Email: <input type="email" name="email" required></label>
+    <label>Phone: <input type="tel" name="phone" pattern="[0-9]{10}" required></label>
+    <label>Gender:
+      <input type="radio" name="gender" value="Male" required> Male
+      <input type="radio" name="gender" value="Female"> Female
+      <input type="radio" name="gender" value="Other"> Other
+    </label>
+    <label>Doctor:
+      <select name="doctor" required>
+        <option value="">Select Doctor</option>
+        <option>Dr. A Sharma</option>
+        <option>Dr. B Verma</option>
+        <option>Dr. C Gupta</option>
+      </select>
+    </label>
+    <label>Specialty:
+      <select name="specialty" required>
+        <option value="">Select Specialty</option>
+        <option>General Medicine</option>
+        <option>Pediatrics</option>
+        <option>Cardiology</option>
+      </select>
+    </label>
+    <label>Appointment Date: <input type="date" name="appt_date" required></label>
+    <label>Appointment Time: <input type="time" name="appt_time" required></label>
+    <label>Visit Type:
+      <select name="visit_type" required>
+        <option value="">Select Type</option>
+        <option>New Patient</option>
+        <option>Follow-up</option>
+        <option>Consultation</option>
+        <option>Emergency</option>
+        <option>Teleconsultation</option>
+      </select>
+    </label>
+    <label>Communication Preference:
+      <input type="checkbox" name="comm_pref" value="Email"> Email
+      <input type="checkbox" name="comm_pref" value="Phone"> Phone
+      <input type="checkbox" name="comm_pref" value="SMS"> SMS
+    </label>
+    <label>Patient ID: <input type="number" name="patient_id" min="1" required></label>
+    <label>Reason for Visit:
+      <textarea name="reason" rows="4" required></textarea>
+    </label>
+    <div class="consent">
+      <input type="checkbox" name="consent" required> I consent to clinic policies and data usage.
+    </div>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <!-- Contact & Emergency Links -->
+  <h2>Contact & Emergency</h2>
+  <p>
+    <a href="tel:+911234567890">Emergency Helpline</a> | 
+    <a href="mailto:info@sunriseclinic.com">Email Us</a>
+  </p>
+  <p><a href="ambulance.jpg"><img src="ambulance.webp" alt="Ambulance" width="200"></a></p>
+
+  <!-- Patient Care Blockquote -->
+  <blockquote>"At Sunrise Health Clinic, patient care comes first — your health is our mission."</blockquote>
+
+</body>
+</html>
