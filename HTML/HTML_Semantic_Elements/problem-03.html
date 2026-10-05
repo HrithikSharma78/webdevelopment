@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sunrise Multi-Specialty Clinic - Information & Appointments</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>Sunrise Multi-Specialty Clinic</h1>
+        <h3>"Compassion, Care, Commitment"</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Departments</a></li>
+                <li><a href="#">Patient Resources</a></li>
+                <li><a href="#">Contact & Location</a></li>
+                <li><a href="#">Appointment Info</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Clinic Introduction -->
+        <section>
+            <h2>Welcome to Sunrise Clinic</h2>
+            <p>
+                Sunrise Multi-Specialty Clinic is dedicated to providing world-class healthcare services. <br>
+                Our team of experienced doctors and staff ensure that every patient receives personalized care. <br>
+                We offer a wide range of medical services across multiple departments. <br>
+                Explore our services, schedules, and appointment options below.
+            </p>
+        </section>
+
+        <!-- Services List -->
+        <section>
+            <h2>Our Services</h2>
+            <ul>
+                <li>General Medicine</li>
+                <li>Pediatrics</li>
+                <li>Cardiology</li>
+                <li>Orthopedics</li>
+                <li>Dermatology</li>
+                <li>Dental Care</li>
+            </ul>
+        </section>
+
+        <!-- Appointment Steps -->
+        <section>
+            <h2>How to Book an Appointment</h2>
+            <ol>
+                <li>Choose your department and doctor.</li>
+                <li>Select a suitable date and time.</li>
+                <li>Fill in patient details and reason for visit.</li>
+                <li>Submit the appointment request form.</li>
+                <li>Receive confirmation via email or SMS.</li>
+            </ol>
+        </section>
+
+        <!-- Definitions -->
+        <section>
+            <h2>Key Terms</h2>
+            <dl>
+                <dt>Consultation</dt><dd>Initial visit with a doctor for diagnosis.</dd>
+                <dt>Follow-up</dt><dd>Subsequent visit for ongoing treatment.</dd>
+                <dt>OPD</dt><dd>Outpatient Department services.</dd>
+                <dt>Appointment</dt><dd>Scheduled time slot for patient consultation.</dd>
+            </dl>
+        </section>
+
+        <!-- Doctor Schedule Table -->
+        <section>
+            <h2>Doctor & Service Schedule</h2>
+            <table border="1" cellpadding="5">
+                <caption>Weekly Doctor Schedule</caption>
+                <tr>
+                    <th>Specialist</th>
+                    <th>Department</th>
+                    <th>Days</th>
+                    <th>Time</th>
+                    <th>Consultation Type</th>
+                </tr>
+                <tr><td>Dr. A Sharma</td><td>Cardiology</td><td>Mon, Wed, Fri</td><td>10 AM - 1 PM</td><td>Consultation</td></tr>
+                <tr><td>Dr. B Mehta</td><td>Pediatrics</td><td>Tue, Thu, Sat</td><td>11 AM - 2 PM</td><td>Consultation</td></tr>
+                <tr><td>Dr. C Rao</td><td>Orthopedics</td><td>Mon - Fri</td><td>2 PM - 5 PM</td><td>Follow-up</td></tr>
+                <tr><td>Dr. D Kapoor</td><td>Dermatology</td><td>Wed, Sat</td><td>3 PM - 6 PM</td><td>Consultation</td></tr>
+                <tr><td>Dr. E Singh</td><td>General Medicine</td><td>Daily</td><td>9 AM - 12 PM</td><td>OPD</td></tr>
+                <tr><td>Dr. F Verma</td><td>Dental Care</td><td>Tue, Thu</td><td>1 PM - 4 PM</td><td>Consultation</td></tr>
+            </table>
+        </section>
+
+        <!-- Doctor Profile Article -->
+        <article>
+            <h2>Featured Doctor: Dr. A Sharma</h2>
+            <figure>
+                <img src="https://via.placeholder.com/300x200?text=Cardiology+Doctor" alt="Cardiology Specialist">
+                <figcaption>Dr. Sharma, Senior Cardiologist</figcaption>
+            </figure>
+            <p>
+                Dr. Sharma has over 15 years of experience in treating complex cardiac conditions. <br>
+                He specializes in interventional cardiology and preventive heart care. <br>
+                Patients appreciate his compassionate approach and clear explanations. <br>
+                <strong>Note:</strong> Early diagnosis and regular check-ups are key to heart health.
+            </p>
+            <blockquote>
+                "Sunrise Clinic gave me the confidence to manage my health. The doctors here truly care about patients."  
+                — Patient Testimonial
+            </blockquote>
+        </article>
+
+        <!-- Appointment Request Form -->
+        <section>
+            <h2>Request an Appointment</h2>
+            <form action="#" method="post">
+                <label for="pname">Patient Name:</label>
+                <input type="text" id="pname" name="pname" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required><br><br>
+
+                <label for="time">Preferred Time:</label>
+                <input type="time" id="time" name="time" required><br><br>
+
+                <label for="dept">Department:</label>
+                <select id="dept" name="dept" required>
+                    <option value="">--Select--</option>
+                    <option value="Cardiology">Cardiology</option>
+                    <option value="Pediatrics">Pediatrics</option>
+                    <option value="Orthopedics">Orthopedics</option>
+                    <option value="Dermatology">Dermatology</option>
+                    <option value="General Medicine">General Medicine</option>
+                    <option value="Dental Care">Dental Care</option>
+                </select><br><br>
+
+                <label for="doctor">Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="">--Select--</option>
+                    <option value="Dr. A Sharma">Dr. A Sharma</option>
+                    <option value="Dr. B Mehta">Dr. B Mehta</option>
+                    <option value="Dr. C Rao">Dr. C Rao</option>
+                    <option value="Dr. D Kapoor">Dr. D Kapoor</option>
+                    <option value="Dr. E Singh">Dr. E Singh</option>
+                    <option value="Dr. F Verma">Dr. F Verma</option>
+                </select><br><br>
+
+                <label for="ctype">Consultation Type:</label>
+                <input type="radio" id="consult" name="ctype" value="Consultation" required> Consultation
+                <input type="radio" id="follow" name="ctype" value="Follow-up"> Follow-up
+                <input type="radio" id="opd" name="ctype" value="OPD"> OPD<br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="0" max="120" required><br><br>
+
+                <label for="reason">Reason / Symptoms:</label><br>
+                <textarea id="reason" name="reason" rows="4" cols="40" required></textarea><br><br>
+
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">I consent to the appointment process and confirm my details are accurate.</label><br><br>
+
+                <input type="submit" value="Book Appointment">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+
+        <!-- Patient Instructions -->
+        <aside>
+            <h2>Patient Instructions</h2>
+            <p>
+                Please arrive 15 minutes before your scheduled appointment. <br>
+                Carry your previous medical records and prescriptions. <br>
+                For emergencies, contact our helpline immediately. <br>
+                <em>Disclaimer:</em> This portal is for appointment booking only and not for medical diagnosis.
+            </p>
+        </aside>
+
+    </main>
+

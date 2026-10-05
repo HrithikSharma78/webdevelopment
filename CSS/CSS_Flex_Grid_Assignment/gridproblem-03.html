@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Area Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #222;
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "A B"
+        "C B"
+        "D E";
+      grid-template-columns: 2fr 1fr; /* left side wider */
+      grid-template-rows: auto auto auto;
+      gap: 20px;
+    }
+
+    .box {
+      background: #333;
+      color: #fff;
+      font-size: 40px; /* bigger text */
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* left aligned text */
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .A { grid-area: A; }
+    .B { grid-area: B; }
+    .C { grid-area: C; }
+    .D { grid-area: D; }
+    .E { grid-area: E; }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="box A">A</div>
+    <div class="box B">B</div>
+    <div class="box C">C</div>
+    <div class="box D">D</div>
+    <div class="box E">E</div>
+  </div>
+</body>
+</html>

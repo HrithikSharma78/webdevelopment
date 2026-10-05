@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Periodic Table Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 8px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .element {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .element span {
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    /* Colors for categories */
+    .red { background: #e74c3c; }
+    .green { background: #27ae60; }
+    .blue { background: #3498db; }
+    .purple { background: #8e44ad; }
+    .orange { background: #e67e22; }
+    .pink { background: #e84393; }
+    .yellow { background: #f1c40f; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>THE PERIODIC TABLE OF ELEMENTS</h2>
+  <div class="grid-container">
+    <div class="element red">H <span>1</span></div>
+    <div class="element red">Be <span>4</span></div>
+    <div class="element red">Mg <span>12</span></div>
+    <div class="element red">Ca <span>20</span></div>
+    <div class="element red">Sr <span>38</span></div>
+    <div class="element red">Ba <span>56</span></div>
+    <div class="element red">Ra <span>88</span></div>
+
+    <div class="element green">Si <span>14</span></div>
+
+    <div class="element blue">Ti <span>22</span></div>
+    <div class="element blue">Fe <span>26</span></div>
+    <div class="element blue">Cu <span>29</span></div>
+    <div class="element blue">Zn <span>30</span></div>
+
+    <div class="element purple">Cl <span>17</span></div>
+    <div class="element orange">Br <span>35</span></div>
+    <div class="element pink">I <span>53</span></div>
+    <div class="element yellow">At <span>85</span></div>
+
+    <div class="element green">La <span>57</span></div>
+    <div class="element green">Am <span>95</span></div>
+    <div class="element green">No <span>102</span></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rooms & Suites</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .section {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .section p {
+      font-size: 16px;
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .rooms {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .room-card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      flex: 1 1 calc(33.333% - 30px); /* 3 per row default */
+      max-width: 350px;
+      transition: transform 0.3s ease;
+    }
+
+    .room-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .room-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .room-info {
+      padding: 20px;
+      text-align: left;
+    }
+
+    .room-info h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    .room-info .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: goldenrod;
+      margin-bottom: 12px;
+    }
+
+    .room-info p {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    /* Media Queries */
+    @media (max-width: 992px) {
+      .room-card {
+        flex: 1 1 calc(50% - 30px); /* 2 per row on medium screens */
+      }
+    }
+
+    @media (max-width: 600px) {
+      .room-card {
+        flex: 1 1 100%; /* 1 per row on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <h2>Rooms & Suites</h2>
+    <p>
+      Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+      there live the blind texts. Separated they live in Bookmarksgrove right at the coast of
+      the Semantics, a large language ocean.
+    </p>
+
+    <div class="rooms">
+      <div class="room-card">
+        <img src="https://imgs.search.brave.com/RwYGgetqxXKuZOPJb0U0DOgiYYstDCvvO_o3HkiEnvk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTMz/NTkzMzI2L3Bob3Rv/L3JldHJvLWNoaWMt/Ym91dGlxdWUtaG90/ZWwuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPVVCb2N5d0VC/aGI0Vk5CdTlpLUhD/UUt5clpuVkpGMU9K/bWd4dEltaWhVNHc9" alt="Single Room">
+        <div class="room-info">
+          <h3>Single Room</h3>
+          <div class="price">90$ / PER NIGHT</div>
+          <p>Perfect for solo travelers, offering comfort and privacy with modern amenities.</p>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://imgs.search.brave.com/zyH_x_IIePeR63U1VfJn3H0DPWO97TEdSufW1rKV4Rs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTQ1/MzEyMTYzMy9waG90/by9tb2Rlcm4taG90/ZWwtcm9vbS13aXRo/LWRvdWJsZS1iZWQt/bmlnaHQtdGFibGVz/LWFuZC1kYXktc29m/YS1iZWQuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTRobURh/S2dCMmFvTVdBTHJ6/aXJuR1o3UGpXNkR0/UGRVMlN5QjMtcWxk/WUU9" alt="Family Room">
+        <div class="room-info">
+          <h3>Family Room</h3>
+          <div class="price">120$ / PER NIGHT</div>
+          <p>Spacious and cozy, ideal for families with multiple beds and relaxing interiors.</p>
+        </div>
+      </div>
+
+      <div class="room-card">
+        <img src="https://imgs.search.brave.com/2ihwrLy2UrPCtfbLIfEOAiJPO7QFvRtV4sc9j5hld4A/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9wcmVz/aWRlbnRpYWwtc3Vp/dGUtd2FybS1ob3Rl/bC1yb29tcy1zLXN0/YW5kYXJkLXJvb20t/MTMwNjYwMDQ3Lmpw/Zw" alt="Presidential Room">
+        <div class="room-info">
+          <h3>Presidential Room</h3>
+          <div class="price">250$ / PER NIGHT</div>
+          <p>Luxury at its finest, featuring premium furnishings, elegant design, and top-class service.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

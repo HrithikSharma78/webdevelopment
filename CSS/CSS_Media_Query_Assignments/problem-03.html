@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation bar */
+    .nav {
+      background: yellow;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    /* Container for left and right boxes */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 400px;
+    }
+
+    .left {
+      background: red;
+      flex: 1;
+      padding: 40px;
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .right {
+      background: green;
+      flex: 1;
+      padding: 40px;
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Media query for small screens */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column; /* stack vertically */
+      }
+      .left, .right {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">Navigation</div>
+  <div class="container">
+    <div class="left">LEFT BOX</div>
+    <div class="right">RIGHT BOX</div>
+  </div>
+</body>
+</html>

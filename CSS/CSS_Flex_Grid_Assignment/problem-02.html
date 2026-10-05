@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StudyLab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #007acc; /* Only StudyLab text is colored */
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #007acc;
+    }
+
+    /* Main Section */
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .intro {
+      flex: 1 1 60%;
+      padding-right: 20px;
+    }
+
+    .intro h2 {
+      color: #007acc;
+      margin-bottom: 10px;
+    }
+
+    .intro h3 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #444;
+    }
+
+    .intro p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .intro iframe {
+      width: 100%;
+      height: 315px;
+      border-radius: 6px;
+      margin-top: 15px;
+    }
+
+    /* Features Section */
+    .features {
+      flex: 1 1 35%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .feature {
+      flex: 1 1 calc(50% - 20px); /* Two per row */
+      padding: 15px;
+      border-radius: 6px;
+      color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .feature h4 {
+      margin: 0 0 5px;
+    }
+
+    .feature p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    /* Different colors for each box */
+    .feature.orange { background: #ff7f50; }
+    .feature.teal { background: #20b2aa; }
+    .feature.purple { background: #9370db; }
+    .feature.green { background: #3cb371; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>StudyLab</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Course</a></li>
+        <li><a href="#">Instructor</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <div class="main">
+    <!-- Intro -->
+    <div class="intro">
+      <h2>WELCOME TO STUDYLAB</h2>
+      <h3>We Are StudyLab An Online Learning Center</h3>
+      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+      
+      <!-- YouTube Video Embed -->
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+              title="StudyLab Video" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
+      <p><strong>Learn anything from StudyLab, Watch video.</strong></p>
+    </div>
+
+    <!-- Features -->
+    <div class="features">
+      <div class="feature orange">
+        <h4>Top Quality Content</h4>
+        <p>A small river named Duden flows by their place and supplies.</p>
+      </div>
+      <div class="feature teal">
+        <h4>Highly Skilled Instructor</h4>
+        <p>A small river named Duden flows by their place and supplies.</p>
+      </div>
+      <div class="feature purple">
+        <h4>World Class & Quiz</h4>
+        <p>A small river named Duden flows by their place and supplies.</p>
+      </div>
+      <div class="feature green">
+        <h4>Get Certified</h4>
+        <p>A small river named Duden flows by their place and supplies.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

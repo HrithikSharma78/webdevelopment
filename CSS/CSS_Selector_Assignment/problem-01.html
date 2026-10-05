@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Cards</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #f9f9f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .card-content .date {
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 15px;
+    }
+
+    .card-content .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: hotpink;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .card-content .btn:hover {
+      background: deeppink;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr; /* stack cards on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h2>Now Showing</h2>
+  <div class="grid-container">
+    <div class="card">
+      <img src="https://imgs.search.brave.com/xCu1JQ_30DKOKKqBJ70t5Tvbxx46UrUbY0IMZsOI_58/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZmlsbWliZWF0/LmNvbS9pbWcvcG9w/Y29ybi9tb3ZpZV9s/aXN0cy9zaGVlbGEt/b3R0LXJlbGVhc2Ut/ZGF0ZS18LXdoZXJl/LXRvLXdhdGNoLXNo/ZWVsYS1tb3ZpZS1v/bi1vdHQtcGxhdGZv/cm0tLXNhdGVsbGl0/ZS1yaWdodHMtMjAy/MzA3MjcxNjQzMDEt/MTk3NC5qcGc" alt="ET (2022)">
+      <div class="card-content">
+        <h3>ET (2022)</h3>
+        <div class="date">Releasing on 11 Mar, 2022</div>
+        <a href="#" class="btn">Book Tickets</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://imgs.search.brave.com/vKjK3vASkvukv5Dav4jTRcMvEFxvQ0T_OT82jCeG7m8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zMy5p/bmRpYS5jb20vd3At/Y29udGVudC91cGxv/YWRzLzIwMjIvMTEv/YmlnLWItamh1bmQt/YWN0b3IuanBnP2lt/cG9saWN5PU1lZGl1/bV9XaWR0aG9ubHkm/dz0zMjA" alt="Jhund">
+      <div class="card-content">
+        <h3>Jhund</h3>
+        <div class="date">Releasing on 11 Mar, 2022</div>
+        <a href="#" class="btn">Book Tickets</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://imgs.search.brave.com/FPXFDbvHjeg4XzmBDzhGfPRxV3FqoLRXNWR_6YRMDvU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9taXIt/czMtY2RuLWNmLmJl/aGFuY2UubmV0L3By/b2plY3RzLzQwNC81/NDE5NWQxNDI4Nzcx/NzEuWTNKdmNDd3pN/RFk0TERJME1EQXNN/VE14TXl3dy5qcGc" alt="Gangubai Kathiawadi">
+      <div class="card-content">
+        <h3>Gangubai Kathiawadi</h3>
+        <div class="date">Releasing on 11 Mar, 2022</div>
+        <a href="#" class="btn">Book Tickets</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://imgs.search.brave.com/Dg7JhfrgYY1Ya3DcL2ZvAZbMElp39RlYX6_LpMEVDkU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudHY5aGluZGku/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIyLzAxL3NoeWFt/LXNpbmdoYS1yb3ku/anBnP3c9MTI4MCZx/PTUx" alt="Radhe Shyam">
+      <div class="card-content">
+        <h3>Radhe Shyam</h3>
+        <div class="date">Releasing on 11 Mar, 2022</div>
+        <a href="#" class="btn">Book Tickets</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://imgs.search.brave.com/sZO9pnJ-b8fe_hlcbN-cejRdJjpeCNhlXELyuPraw00/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDEwNDcx/Mjc0LmpwZw" alt="Uncharted">
+      <div class="card-content">
+        <h3>Uncharted</h3>
+        <div class="date">Releasing on 11 Mar, 2022</div>
+        <a href="#" class="btn">Book Tickets</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://imgs.search.brave.com/QCB9DQOcVqMQHg4bCUVgIX2lLeHaUTfgS49UKXFiMq0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wcmV2/aWV3LnJlZGQuaXQv/YmF0c3VpdC1zaWxo/b3VldHRlLWNvbXBh/cmlzb24tZnJvbS10/aGUtYmF0bWFuLWFu/ZC10aGUtdjAteXBh/aWxobGR0anFoMS5q/cGVnP3dpZHRoPTY0/MCZjcm9wPXNtYXJ0/JmF1dG89d2VicCZz/PWY1MWZmYjkyMDc5/ODAxODg2NTc0NzZl/MDgzNTViNTQzMjZl/NGEzYWQ" alt="The Batman">
+      <div class="card-content">
+        <h3>The Batman</h3>
+        <div class="date">Releasing on 11 Mar, 2022</div>
+        <a href="#" class="btn">Book Tickets</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

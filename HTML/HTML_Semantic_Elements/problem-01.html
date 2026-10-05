@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Everbright University - Admissions Portal</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>Everbright University</h1>
+        <h3>"Knowledge. Innovation. Excellence."</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Scholarships</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- University Introduction -->
+        <section>
+            <h2>Welcome to Everbright University</h2>
+            <p>
+                Everbright University is a premier institution dedicated to nurturing talent and fostering innovation. <br>
+                Our campus offers world-class facilities, diverse programs, and a vibrant student community. <br>
+                We believe in holistic education that combines academic excellence with extracurricular growth. <br>
+                Explore our admissions portal to learn more about programs, eligibility, and the application process.
+            </p>
+        </section>
+
+        <!-- Programs Table -->
+        <section>
+            <h2>Programs Offered</h2>
+            <table border="1" cellpadding="5">
+                <caption>Admission Programs 2026</caption>
+                <tr>
+                    <th>Program</th>
+                    <th>Duration</th>
+                    <th>Eligibility</th>
+                    <th>Mode</th>
+                    <th>Intake</th>
+                    <th>Fee</th>
+                </tr>
+                <tr><td>B.Tech</td><td>4 Years</td><td>12th PCM</td><td>Full-time</td><td>120</td><td>₹1,20,000</td></tr>
+                <tr><td>B.Sc</td><td>3 Years</td><td>12th Science</td><td>Full-time</td><td>80</td><td>₹80,000</td></tr>
+                <tr><td>B.Com</td><td>3 Years</td><td>12th Commerce</td><td>Full-time</td><td>100</td><td>₹75,000</td></tr>
+                <tr><td>MBA</td><td>2 Years</td><td>Graduation</td><td>Full-time</td><td>60</td><td>₹2,00,000</td></tr>
+                <tr><td>MCA</td><td>2 Years</td><td>BCA/Graduation</td><td>Full-time</td><td>50</td><td>₹1,50,000</td></tr>
+                <tr><td>PhD</td><td>3-5 Years</td><td>Post Graduation</td><td>Full-time</td><td>20</td><td>₹2,50,000</td></tr>
+            </table>
+        </section>
+
+        <!-- Facilities List -->
+        <section>
+            <h2>Campus Facilities</h2>
+            <ul>
+                <li>Modern Library with Digital Resources</li>
+                <li>Advanced Laboratories</li>
+                <li>Sports Complex and Gym</li>
+                <li>Hostels with Wi-Fi</li>
+                <li>Student Clubs and Societies</li>
+            </ul>
+        </section>
+
+        <!-- Application Steps -->
+        <section>
+            <h2>Application Process</h2>
+            <ol>
+                <li>Register on the Admissions Portal</li>
+                <li>Fill in Personal and Academic Details</li>
+                <li>Upload Required Documents</li>
+                <li>Pay Application Fee Online</li>
+                <li>Submit Application and Print Confirmation</li>
+            </ol>
+        </section>
+
+        <!-- Definitions -->
+        <section>
+            <h2>Key Terms</h2>
+            <dl>
+                <dt>Eligibility</dt><dd>Minimum academic qualifications required for admission.</dd>
+                <dt>Merit List</dt><dd>List of shortlisted candidates based on performance.</dd>
+                <dt>Scholarship</dt><dd>Financial aid provided to deserving students.</dd>
+                <dt>Application Fee</dt><dd>Non-refundable fee for processing applications.</dd>
+            </dl>
+        </section>
+
+        <!-- Admission Announcement -->
+        <article>
+            <h2>Important Notice</h2>
+            <p><mark>Admissions for 2026 are now open!</mark> Apply before <strong>October 15, 2026</strong> to secure your seat.</p>
+            <blockquote>
+                "Everbright University gave me the confidence to pursue my dreams. The faculty and facilities are unmatched."  
+                — Alumni, Class of 2022
+            </blockquote>
+        </article>
+
+        <!-- Apply Now Form -->
+        <section>
+            <h2>Apply Now</h2>
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" min="1990-01-01" max="2010-12-31" required><br><br>
+
+                <label for="program">Select Program:</label>
+                <select id="program" name="program" required>
+                    <option value="">--Select--</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="B.Sc">B.Sc</option>
+                    <option value="B.Com">B.Com</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="PhD">PhD</option>
+                </select><br><br>
+
+                <label>Study Mode:</label>
+                <input type="radio" id="full" name="mode" value="Full-time" required> Full-time
+                <input type="radio" id="part" name="mode" value="Part-time"> Part-time<br><br>
+
+                <label for="address">Permanent Address:</label><br>
+                <textarea id="address" name="address" rows="4" cols="40" required></textarea><br><br>
+
+                <input type="checkbox" id="declare" name="declare" required>
+                <label for="declare">I declare that the information provided is true.</label><br><br>
+
+                <input type="submit" value="Submit Application">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+
+        <!-- Aside Help -->
+        <aside>
+            <h2>Need Help?</h2>
+            <p>For assistance with the application process, visit our <a href="#">FAQ page</a> or contact the admissions office.</p>
+        </aside>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Everbright University. All rights reserved.</p>
+        <p>Contact: <a href="mailto:admissions@everbright.edu">admissions@everbright.edu</a> | Phone: <a href="tel:+911234567890">+91 1234567890</a></p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </footer>
+
+</body>
+</html>
